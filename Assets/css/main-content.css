@@ -1,0 +1,32 @@
+.hero-section .hero-header {
+}
+
+.hero-header hgroup h1,
+.hero-header hgroup h3 {
+  margin: 0;
+  color: #d6deef;
+}
+
+.hero-header hgroup h3 {
+  padding-top: 0.5rem;
+}
+
+.hero-header p {
+  color: #7685a1;
+}
+
+.so-me-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.hero-header .so-me-icons img {
+  width: 70%;
+  filter: brightness(13);
+}
+
+.so-me-icons img:hover {
+  scale: 1.2;
+}
