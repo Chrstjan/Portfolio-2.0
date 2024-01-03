@@ -1,6 +1,3 @@
-.hero-section .hero-header {
-}
-
 .hero-header hgroup h1,
 .hero-header hgroup h3 {
   margin: 0;
@@ -31,7 +28,8 @@
 }
 
 .about-me header,
-.experience header {
+.experience header,
+.projects header {
   color: #d6deef;
 }
 
@@ -58,18 +56,23 @@
 }
 
 .experience-footer {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .experience-footer .token-card {
+  display: inline-block;
   background: #142f4e;
   padding: 0.3rem 0.5rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
   border-radius: 13px;
   color: limegreen;
   cursor: pointer;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
