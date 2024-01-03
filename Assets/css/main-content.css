@@ -18,15 +18,70 @@
 .so-me-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.1rem;
-  align-items: center;
+  margin: 0;
 }
 
 .hero-header .so-me-icons img {
-  width: 70%;
+  width: 15vw;
   filter: brightness(13);
 }
 
 .so-me-icons img:hover {
   scale: 1.2;
+}
+
+.about-me header,
+.experience header {
+  color: #d6deef;
+}
+
+.about-me .text-container p {
+  color: #7685a1;
+}
+
+.experience .experience-article header hgroup h3,
+.experience .experience-article header hgroup h4,
+.experience .experience-article header hgroup h5 {
+  margin: 0;
+}
+
+.experience-article header hgroup h5 {
+  padding-bottom: 0.7rem;
+}
+
+.experience-article header hgroup h3 {
+  padding-bottom: 0.3rem;
+}
+
+.experience-article p {
+  color: #7685a1;
+}
+
+.experience-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience-footer .token-card {
+  background: #142f4e;
+  padding: 0.3rem 0.5rem;
+  border-radius: 13px;
+  color: limegreen;
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .so-me-icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  .hero-header .so-me-icons img {
+    width: 4vw;
+  }
 }
